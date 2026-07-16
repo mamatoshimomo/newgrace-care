@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>New Grace Care+</title>
+
+<meta name="theme-color" content="#87CEEB">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===========================
+REVIEW POPUP
+=========================== -->
+
+<div id="reviewModal" class="review-modal">
+
+<div class="review-box">
+
+<h2>⭐ Share Your Experience</h2>
+
+<p>
+Choose what impressed you the most.
+We'll help you write a review.
+</p>
+
+<div class="review-options">
+
+<button onclick="generateReview('delivery')">
+🚚 Fast Delivery
+</button>
+
+<button onclick="generateReview('staff')">
+😊 Friendly Staff
+</button>
+
+<button onclick="generateReview('medicine')">
+💊 Genuine Medicines
+</button>
+
+<button onclick="generateReview('overall')">
+❤️ Overall Experience
+</button>
+
+</div>
+
+<textarea
+id="reviewText"
+readonly
+placeholder="Your review will appear here...">
+</textarea>
+
+<div class="review-actions">
+
+<button class="copy-btn" onclick="copyReview()">
+📋 Copy Review
+</button>
+
+<button class="cancel-btn" onclick="closeReview()">
+Cancel
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="phone">
+
+<div class="container">
+
+<header>
+
+<img
+src="assets/images/logo.png"
+class="logo"
+alt="New Grace Logo">
+
+<h1>NEW GRACE</h1>
+
+<h2>Care+</h2>
+
+<p class="subtitle">
+Your Trusted Pharmacy Since 1997
+</p>
+
+<div class="status-card">
+
+<div class="status-dot"></div>
+
+<div>
+
+<strong id="statusTitle">
+Checking...
+</strong>
+
+<p id="statusText">
+Please wait...
+</p>
+
+</div>
+
+</div>
+
+<div class="rating">
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+<h3>
+4.8 Google Rating
+</h3>
+
+<p>
+Trusted by 170+ Happy Customers
+</p>
+
+<div class="trust-list">
+
+<span>✔ Since 1997</span>
+
+<span>✔ Genuine Medicines</span>
+
+<span>✔ Free Home Delivery</span>
+
+</div>
+
+</div>
+
+<section class="welcome-card">
+
+<h3>
+👋 Welcome to New Grace Care+
+</h3>
+
+<p>
+
+Order medicines,
+chat with our pharmacists,
+request home delivery
+and manage everything from one place.
+
+</p>
+
+</section>
+
+<section class="hero">
+
+<h2>
+Choose a servce below.
+</h2>
+
+</section>
+
+</section>
+
+</header>
+
+<section class="buttons">
+    <!-- ORDER MEDICINES -->
+
+<div class="action-card primary-card" onclick="orderMedicines()">
+
+    <div class="icon">
+        💊
+    </div>
+
+    <div class="content">
+        <h3>Order Medicines</h3>
+        <p>Upload your prescription via WhatsApp</p>
+    </div>
+
+    <div class="arrow">
+        →
+    </div>
+
+</div>
+
+<!-- GOOGLE REVIEW -->
+
+<div class="action-card" onclick="leaveReview()">
+
+    <div class="icon">
+        ⭐
+    </div>
+
+    <div class="content">
+        <h3>Leave Google Review</h3>
+        <p>Help other families discover New Grace</p>
+    </div>
+
+    <div class="arrow">
+        →
+    </div>
+
+</div>
+
+<!-- WHATSAPP -->
+
+<div class="action-card" onclick="openWhatsApp()">
+
+    <div class="icon">
+        💬
+    </div>
+
+    <div class="content">
+        <h3>WhatsApp Pharmacist</h3>
+        <p>Instant chat with our pharmacy team</p>
+    </div>
+
+    <div class="arrow">
+        →
+    </div>
+
+</div>
+
+<div class="grid">
+
+    <div class="small-card" onclick="callStore()">
+
+        <div class="small-icon">
+            📞
+        </div>
+
+        <span>Call</span>
+
+    </div>
+
+    <div class="small-card" onclick="openDirections()">
+
+        <div class="small-icon">
+            📍
+        </div>
+
+        <span>Directions</span>
+
+    </div>
+
+    <div class="small-card" onclick="openInstagram()">
+
+        <div class="small-icon">
+            📸
+        </div>
+
+        <span>Instagram</span>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="delivery-banner">
+
+    <div class="delivery-icon">
+        🚚
+    </div>
+
+    <h3>FREE HOME DELIVERY</h3>
+
+    <p>
+        Serving Powai • Chandivali • Raheja Vihar
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        New Grace Medical & General Stores
+    </p>
+
+    <p>
+        Trusted by Families Since 1997
+    </p>
+
+    <p>
+        Mumbai
+    </p>
+
+</footer>
+
+</div>
+
+</div>
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+href="https://wa.me/919867629429?text=Hi%20New%20Grace%20Medical,%20I%20would%20like%20to%20order%20medicines."
+class="floating-whatsapp"
+target="_blank"
+aria-label="Chat on WhatsApp">
+
+💬
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#EAF8FF;
+    display:flex;
+    justify-content:center;
+    padding:25px 15px;
+    min-height:100vh;
+}
+
+.phone{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    background:#ffffff;
+    border-radius:34px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    padding:38px 28px 25px;
+    text-align:center;
+}
+
+.logo{
+    width:110px;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:42px;
+    color:#123D73;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+header h2{
+    color:#87CEEB;
+    font-size:34px;
+    font-weight:700;
+    margin-top:-8px;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#777;
+    font-size:15px;
+}
+
+/* ---------------- STATUS ---------------- */
+
+.status-card{
+
+    margin-top:25px;
+
+    background:#F5FFF8;
+
+    border:1px solid #D8F6E2;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.status-dot{
+
+    width:15px;
+
+    height:15px;
+
+    border-radius:50%;
+
+    background:#2ECC71;
+
+    box-shadow:0 0 14px #2ECC71;
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1);}
+
+50%{transform:scale(1.2);}
+
+100%{transform:scale(1);}
+
+}
+
+.status-card strong{
+
+    color:#146B2E;
+
+    font-size:18px;
+
+}
+
+.status-card p{
+
+    font-size:13px;
+
+    color:#666;
+
+    margin-top:4px;
+
+}
+
+/* ---------------- RATING ---------------- */
+
+.rating{
+
+    margin-top:22px;
+
+    background:#F8FBFE;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    border:1px solid #EEF3F8;
+
+}
+
+.stars{
+
+    font-size:24px;
+
+}
+
+.rating h3{
+
+    margin-top:12px;
+
+    color:#123D73;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.rating p{
+
+    color:#666;
+
+    margin-top:6px;
+
+}
+
+.trust-list{
+
+    margin-top:18px;
+
+    display:flex;
+
+    gap:10px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.trust-list span{
+
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    padding:10px 30px 5px;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:38px;
+
+    color:#123D73;
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* ---------------- DELIVERY ---------------- */
+
+.delivery-banner{
+
+    margin:30px;
+
+    background:linear-gradient(135deg,#123D73,#245DA8);
+
+    color:white;
+
+    text-align:center;
+
+    padding:22px;
+
+    border-radius:22px;
+
+}
+
+.delivery-banner b{
+
+    display:block;
+
+    margin-top:10px;
+
+    font-size:22px;
+
+}
+
+.delivery-banner p{
+
+    margin-top:10px;
+
+    opacity:.9;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    text-align:center;
+
+    padding:20px 20px 35px;
+
+    color:#888;
+
+    font-size:13px;
+
+}
+
+footer p:first-child{
+
+    font-weight:600;
+
+    color:#123D73;
+
+    margin-bottom:5px;
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:480px){
+
+header h1{
+
+font-size:34px;
+
+}
+
+header h2{
+
+font-size:28px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.rating h3{
+
+font-size:24px;
+
+}
+
+}
+.welcome-card{
+
+margin:28px;
+
+padding:24px;
+
+background:linear-gradient(135deg,#F8FCFF,#EEF9FF);
+
+border-radius:22px;
+
+border:1px solid #DDEFFD;
+
+text-align:center;
+
+}
+
+.welcome-card h3{
+
+font-size:22px;
+
+color:#123D73;
+
+margin-bottom:12px;
+
+}
+
+.welcome-card p{
+
+line-height:1.8;
+
+font-size:15px;
+
+color:#666;
+
+}
